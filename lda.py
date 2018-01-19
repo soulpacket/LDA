@@ -22,7 +22,7 @@ def input_vector():
     预处理后得到输入向量，[[words]]
     :return: LDA模型的输入向量
     """
-    with open('lda_data/subingtian.txt', 'r', encoding='utf-8') as file:
+    with open('lda_data/qiaosenSs.txt', 'r', encoding='utf-8') as file:
         word_list = []
         for line in file:
             b = line.replace('🏓', '乒乓球').replace('🏅', '奖牌').replace(' ', '').strip()
